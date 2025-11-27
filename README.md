@@ -1,83 +1,92 @@
-Tugas Praktikum Pemrograman Berorientasi Objek (OOP)
+# 📘 Tugas Praktikum Pemrograman Berorientasi Objek (OOP)
 
-Proyek ini merupakan implementasi program pemesanan sederhana menggunakan konsep OOP di Java. Program menampilkan menu makanan/minuman, memproses pesanan, menghitung total harga + diskon, dan mencetak struk.
+Proyek ini merupakan aplikasi pemesanan sederhana berbasis **Java OOP** yang menampilkan menu, menerima pesanan, menghitung total beserta diskon, dan mencetak struk pembelian. Program ini dibuat untuk memenuhi tugas praktikum mata kuliah **Pemrograman Berorientasi Objek**.
 
-📌 Tujuan Proyek
+---
 
-Menerapkan konsep Class, Object, Encapsulation, Inheritance, dan Exception Handling
+## 📂 Struktur Proyek
 
-Membuat sistem pemesanan sederhana dengan struktur folder yang bersih
-
-Menggunakan package untuk memisahkan fitur berdasarkan fungsi
-
-📂 Struktur Folder
 src/
 │
 ├── menu/
-│   ├── MenuItem.java
-│   ├── MenuService.java
-│   └── MenuItemNotFoundException.java
+│ ├── MenuItem.java
+│ ├── MenuService.java
+│ └── MenuItemNotFoundException.java
 │
 ├── order/
-│   ├── Order.java
-│   └── OrderItem.java
+│ ├── Order.java
+│ └── OrderItem.java
 │
 ├── struk/
-│   └── ReceiptGenerator.java
+│ └── ReceiptGenerator.java
 │
 └── Main.java
 
-🚀 Fitur Program
 
-Menampilkan daftar menu
+---
 
-User memilih menu + jumlah pesanan
+## 🚀 Fitur Utama
 
-Validasi input & penanganan error
+- Menampilkan daftar menu makanan/minuman
+- Memproses pesanan beserta jumlahnya
+- Validasi input dan penanganan error
+- Menghitung subtotal, diskon, dan total akhir
+- Mencetak struk transaksi secara rapi di terminal
+- Menggunakan konsep OOP lengkap: *Encapsulation, Class/Object, Constructor, Package, Exception Handling*
 
-Menghitung total harga otomatis
+---
 
-Penerapan diskon 10% bila total pembelian memenuhi syarat
+## 🧩 Konsep OOP yang Diterapkan
 
-Mencetak struk akhir yang rapi di terminal
+### ✔️ **Encapsulation**
+Semua atribut class dibuat private dan diakses melalui getter/setter.
 
-🧩 Konsep OOP yang Digunakan
+### ✔️ **Class & Object**
+Memisahkan entitas:
+- `MenuItem`
+- `MenuService`
+- `Order`
+- `OrderItem`
+- `ReceiptGenerator`
 
-Encapsulation → atribut pada MenuItem, Order, dan OrderItem dibuat private
+### ✔️ **Exception Handling**
+Custom exception:
+- `MenuItemNotFoundException`
 
-Class & Object → tiap bagian program dipisah menjadi class
+Digunakan untuk menangani input menu yang tidak tersedia.
 
-Constructor → digunakan untuk inisialisasi menu dan pesanan
+### ✔️ **Package**
+Struktur modular yang memisahkan fungsi berdasarkan domain:
+- `menu`
+- `order`
+- `struk`
 
-Exception Handling
+---
 
-MenuItemNotFoundException bila user memilih menu yang tidak ada
+## ▶️ Cara Menjalankan Program
 
-Package → memisahkan menu, order, dan struk untuk struktur yang bersih
+1. Pastikan struktur folder sudah sesuai.
+2. Compile seluruh file:
+   ```bash
+   javac Main.java
+3. Jalankan program
+   java Main
 
-▶️ Cara Menjalankan
+🧾 Contoh Output Struk
 
-Pastikan struktur folder sudah sesuai
+============= STRUK PEMBELIAN =============
+Nasi Goreng       x1   = 18000
+Es Teh            x2   = 10000
+-------------------------------------------
+Subtotal                : 28000
+Diskon 10%             : -2800
+Total Akhir            : 25200
+===========================================
 
-Compile semua file:
+✨ Tujuan Pembuatan Proyek
 
-javac Main.java
-
-
-Jalankan program:
-
-java Main
-
-📝 Contoh Output Struk
-========= STRUK PEMBELIAN =========
-Es Teh x2    = 10.000
-Nasi Goreng x1 = 18.000
------------------------------------
-Subtotal : 28.000
-Diskon 10% : -2.800
-Total Akhir : 25.200
-===================================
-
-🎯 Catatan
-
-Program bisa dikembangkan lagi: tambah kategori menu, sistem pembayaran, database, dll.
+1. Proyek ini dibuat sebagai implementasi nyata dari:
+2. Penerapan konsep OOP secara terstruktur
+3. Cara menggunakan package dalam Java
+4. Penggunaan exception untuk validasi
+5. Membuat aplikasi CLI modular yang mudah dibaca dan diperbaiki
