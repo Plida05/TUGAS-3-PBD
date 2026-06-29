@@ -1,92 +1,150 @@
-# 📘 Tugas Praktikum Pemrograman Berorientasi Objek (OOP)
+# 🍽 Restaurant Ordering System (Java OOP)
 
-Proyek ini merupakan aplikasi pemesanan sederhana berbasis **Java OOP** yang menampilkan menu, menerima pesanan, menghitung total beserta diskon, dan mencetak struk pembelian. Program ini dibuat untuk memenuhi tugas praktikum mata kuliah **Pemrograman Berorientasi Objek**.
+A simple Java console application that simulates a restaurant ordering system using Object-Oriented Programming (OOP) principles.
 
----
-
-## 📂 Struktur Proyek
-
-src/
-│
-├── menu/
-│ ├── MenuItem.java
-│ ├── MenuService.java
-│ └── MenuItemNotFoundException.java
-│
-├── order/
-│ ├── Order.java
-│ └── OrderItem.java
-│
-├── struk/
-│ └── ReceiptGenerator.java
-│
-└── Main.java
-
+The application allows users to place food orders, calculate discounts, validate menu selections, and generate purchase receipts through a modular project structure.
 
 ---
 
-## 🚀 Fitur Utama
+## 📸 Preview
 
-- Menampilkan daftar menu makanan/minuman
-- Memproses pesanan beserta jumlahnya
-- Validasi input dan penanganan error
-- Menghitung subtotal, diskon, dan total akhir
-- Mencetak struk transaksi secara rapi di terminal
-- Menggunakan konsep OOP lengkap: *Encapsulation, Class/Object, Constructor, Package, Exception Handling*
+> Screenshot coming soon.
 
 ---
 
-## 🧩 Konsep OOP yang Diterapkan
+## ✨ Features
 
-### ✔️ **Encapsulation**
-Semua atribut class dibuat private dan diakses melalui getter/setter.
+- 🍛 Display food and beverage menu
+- 🛒 Process customer orders
+- 🔢 Calculate subtotal, discount, and final payment
+- ⚠️ Validate user input using custom exceptions
+- 🧾 Generate formatted purchase receipts
+- 📦 Organized project structure using Java packages
+- 🧩 Apply Object-Oriented Programming concepts
 
-### ✔️ **Class & Object**
-Memisahkan entitas:
+---
+
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Java | Programming Language |
+| Object-Oriented Programming (OOP) | Software Design |
+| CLI (Console) | User Interface |
+
+---
+
+## 📂 Project Structure
+
+```text
+restaurant-ordering-system/
+│
+├── src/
+│   ├── menu/
+│   │   ├── MenuItem.java
+│   │   ├── MenuService.java
+│   │   └── MenuItemNotFoundException.java
+│   │
+│   ├── order/
+│   │   ├── Order.java
+│   │   └── OrderItem.java
+│   │
+│   ├── struk/
+│   │   └── ReceiptGenerator.java
+│   │
+│   └── Main.java
+│
+└── README.md
+```
+
+---
+
+## 🧠 OOP Concepts Implemented
+
+### 🔒 Encapsulation
+
+All class attributes are declared as `private` and accessed using getters and setters.
+
+### 📦 Class & Object
+
+The application is divided into multiple classes to separate responsibilities:
+
 - `MenuItem`
 - `MenuService`
 - `Order`
 - `OrderItem`
 - `ReceiptGenerator`
 
-### ✔️ **Exception Handling**
-Custom exception:
-- `MenuItemNotFoundException`
+### ⚠️ Exception Handling
 
-Digunakan untuk menangani input menu yang tidak tersedia.
+A custom exception (`MenuItemNotFoundException`) is implemented to handle invalid menu selections.
 
-### ✔️ **Package**
-Struktur modular yang memisahkan fungsi berdasarkan domain:
+### 📁 Package Organization
+
+The project is organized into packages based on functionality:
+
 - `menu`
 - `order`
 - `struk`
 
+This modular structure improves readability and maintainability.
+
 ---
 
-## ▶️ Cara Menjalankan Program
+## 🚀 Getting Started
 
-1. Pastikan struktur folder sudah sesuai.
-2. Compile seluruh file:
-   ```bash
-   javac Main.java
-3. Jalankan program
-   java Main
+### Clone Repository
 
-🧾 Contoh Output Struk
+```bash
+git clone https://github.com/Plida05/<repository-name>.git
+```
 
-============= STRUK PEMBELIAN =============
+### Compile
+
+```bash
+javac Main.java
+```
+
+### Run
+
+```bash
+java Main
+```
+
+---
+
+## 🧾 Sample Output
+
+```text
+============= PURCHASE RECEIPT =============
+
 Nasi Goreng       x1   = 18000
 Es Teh            x2   = 10000
--------------------------------------------
+
+--------------------------------------------
 Subtotal                : 28000
-Diskon 10%             : -2800
-Total Akhir            : 25200
-===========================================
+Discount (10%)          : -2800
+Total                   : 25200
 
-✨ Tujuan Pembuatan Proyek
+============================================
+```
 
-1. Proyek ini dibuat sebagai implementasi nyata dari:
-2. Penerapan konsep OOP secara terstruktur
-3. Cara menggunakan package dalam Java
-4. Penggunaan exception untuk validasi
-5. Membuat aplikasi CLI modular yang mudah dibaca dan diperbaiki
+---
+
+## 🎯 Learning Objectives
+
+This project was developed to practice:
+
+- Object-Oriented Programming (OOP)
+- Package Organization
+- Exception Handling
+- Modular Application Design
+- Java Console Application Development
+
+---
+
+## 👩‍💻 Author
+
+**Rr Nabila Fatharani Yuwvrida**
+
+Information Systems Student
