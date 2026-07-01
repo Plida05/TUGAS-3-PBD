@@ -8,7 +8,14 @@ The application allows users to place food orders, calculate discounts, validate
 
 ## 📸 Preview
 
-> Screenshot coming soon.
+### Menu Utama
+![Menu Utama](Asset/menu-utama.png)
+
+### Penambahan Menu
+![Penambahan Menu](Asset/penambahan-menu.png)
+
+### Cetak Struk
+![Cetak Struk](Asset/cetak-struk.png)
 
 ---
 
